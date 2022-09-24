@@ -1,0 +1,14 @@
+// Coded on 24/09/22
+
+public class Main{
+    
+    // other than main function
+    public static void func1(){
+        System.out.println("Success ");
+        return;
+    }
+
+    public static void main(String args[]){
+        func1();      // calling other functions
+    }
+}

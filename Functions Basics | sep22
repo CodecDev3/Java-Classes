@@ -14,7 +14,7 @@ public class Main{
 }
 
 
-// int type
+// ------------------ int type ------------------
 
 import java.util.*;
 public class Main{
@@ -32,6 +32,29 @@ public class Main{
         int sum = cal(a,b);
         
         System.out.println("Sum is : " + sum);
+        
+    }
+}
+
+// OR
+
+import java.util.*;
+public class Main{
+    
+    public static int cal(int n1,int n2){
+        //int s = n1 + n2;
+        return n1+n2;
+    }
+
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        
+        //int sum = cal(a,b);
+        
+        System.out.println("Sum is : " + cal(a,b));
         
     }
 }

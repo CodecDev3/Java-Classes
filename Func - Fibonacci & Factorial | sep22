@@ -1,4 +1,5 @@
 // Coded on 27/09/22
+// used void & int funtion
 
 import java.util.*;
 
@@ -20,9 +21,10 @@ public class Main{
             case 'm' : {
                 System.out.println("Enter Number : ");
                 int n = sc.nextInt();
+                
                 int factt = fac(n);
                 System.out.print(factt);
-                
+                // OR       System.out.print(fac(n));       will print the value fact
             }
                 break;
                 

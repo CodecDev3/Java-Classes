@@ -1,0 +1,46 @@
+// Coded 18/09/22
+
+import java.util.*;
+public class dev {
+    public static void main(String args[]){
+        Pen p1 = new Pen();
+        //Scanner sc = new Scanner(System.in);
+
+        p1.setcolor();
+        
+        /*         // can also access size & color
+        p1.size=15;
+        p1.color="Orange";
+        System.out.println(p1.size +" "+ p1.color);         // 15 Orange
+        */
+        
+        }
+}
+
+class Pen{
+
+    String color;
+    int size;
+    Scanner sc = new Scanner(System.in);
+
+    void setcolor(){    //String nc1, String nc2
+        String nc1;
+        String nc2;
+
+        nc1 = sc.nextLine();
+        nc2 = sc.next();
+        
+        /*
+        nextLine()      : all the words are in a single string
+        next()          : will split the line up into individual words, returning individual text Strings one at a time.
+        */
+        
+        color = nc1;
+        System.out.println(nc2);
+        System.out.println(color);
+    }
+
+    void setsize(int newsize){
+        size = newsize;
+    }
+}

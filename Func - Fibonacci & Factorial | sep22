@@ -6,7 +6,7 @@ public class Main{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         
-        System.out.print("For Fibonacci Series type f \nFor Factorial type m \n");
+        System.out.print("For Fibonacci Series type f \nFor Factorial type m ");
         char c = sc.next().charAt(0);
         
         switch(c){
@@ -30,6 +30,7 @@ public class Main{
         }
     }
     
+    
     public static void fibo(int num){
         
         int f[] = new int[num];
@@ -37,17 +38,22 @@ public class Main{
         f[0] = 0;
         f[1] = 1;
         System.out.print(f[0] + " " + f[1] + " ");
+        
         for(int i=2;i<num;i++){
             f[i] = f[i-1] + f[i-2];
             System.out.print(f[i] + " ");
         }
     }
     
+    
     public static int fac(int num){
+        
         int fact=1;
+        
         for(int i=1;i<=num;i++){
             fact*=i;
         }
+        
         return fact;
     }
     

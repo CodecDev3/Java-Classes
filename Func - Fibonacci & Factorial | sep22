@@ -33,7 +33,7 @@ public class Main{
     }
     
     
-    public static void fibo(int num){
+    public static void fibo(int num){                   // type void won't return any int or string
         
         int f[] = new int[num];
         
@@ -45,6 +45,7 @@ public class Main{
             f[i] = f[i-1] + f[i-2];
             System.out.print(f[i] + " ");
         }
+        return;                                         // return is optional in type void
     }
     
     

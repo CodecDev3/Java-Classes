@@ -1,0 +1,32 @@
+// Coded on 29/09/22
+
+import java.util.*;
+
+public class dev{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        
+        double bs = sc.nextDouble();
+        int c = sc.nextInt();
+        
+        switch(c){
+            case 1 : se(bs,2);
+                break;
+            case 2 : se(bs);
+                break;
+            default : System.out.println("Invalid");
+        }
+    }
+    
+    public static void se(double bs, int a){                                
+        double sal;
+        sal = bs*0.5;
+        System.out.println(sal);
+    }
+    
+    public static void se(double bs){
+        double sal;
+        sal = bs*0.1;
+        System.out.println(sal);
+    }
+}

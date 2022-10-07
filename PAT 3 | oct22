@@ -1,1 +1,64 @@
 // Coded on 07/10/22
+ABC car showroom sells various types of cars such as Hatchback, Sedan, SUV and MUV. Due to year end sale, the showroom provides 3%, 5%, 10% and 15% discount for various car models Hatchback, Sedan, SUV and MUV respectively. Also applies 12% of GST for the total amount of purchase Write a java program for the given scenario as follows:
+
+Crate a class Car with some fields (Type, price, extrafitting, gst, discount and NetPrice) and methods such as Read(), Compute() and Display()
+Read() method will read the type, price and extrafitting of the car
+Compute() method will check the type of car and estimate the Net amount to be paid to the showroom. If the type of car is other than Hatchback, Sedan, SUV and MUV then display “Invalid Type”.
+Estimation is done as given below: (For example-if the purchased car is Hatchback)
+    Total=price+extrafitting
+
+    discount=total*0.03           // 0.03 denotes 3% wastage
+
+    gst=(total-discount)*0.12  // 0.12 denotes 12% GST
+
+    net=total-discount+gst
+
+ 
+
+ 
+
+Sample Input
+
+Hatchback
+
+450000
+
+120000
+
+ 
+
+Sample Output
+
+619248
+
+ 
+
+Sample Input
+
+Truck
+
+1500000
+
+200000
+
+ 
+
+Sample Output
+
+Invalid Type
+
+ 
+
+Sample Input
+
+SUV
+
+1500000
+
+200000
+
+ 
+
+Sample Output
+
+1713600

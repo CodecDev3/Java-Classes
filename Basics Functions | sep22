@@ -36,7 +36,7 @@ public class Main{
     }
 }
 
-// OR
+// --------OR--------
 
 import java.util.*;
 public class Main{
